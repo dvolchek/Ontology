@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#"
+     xml:base="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Sections"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#is_made_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#is_made_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#name -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Assignment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Assignment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Course"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Fin_Exam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Fin_Exam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Assignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Homework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Homework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Assignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Lab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Lab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Assignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Mid_Exam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Mid_Exam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Assignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Sections -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Sections"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Teacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Teacher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#User_grades -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#User_grades">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Assignment"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Image -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Image">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Overview -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Overview">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#name -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#name">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvolchek/ontologies/2015/10/untitled-ontology-24#Course"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
